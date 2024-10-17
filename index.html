@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Compras</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="encabezado">
+            <img src="images/logo.png" class="logo" alt="Logo que contiene un mate con el nombre Mates del Gaucho">
+            <div class="icono-carrito" id="icono-carrito">
+                <img src="images/carrito.png" class="carrito" alt="Carrito de compras">
+                <p class="total-productos">0</p>
+            </div>
+            
+            <div class="productos-en-carrito" id="productos-en-carrito">
+                <div class="encabezado-carrito">
+                    <h3>Productos en el carrito</h3>
+                    <button id="cerrar">X</button>
+                </div>
+
+                <div class="contenedor-carrito">
+                    <!-- <div class="producto-carrito">
+                        <img src="images/producto2.png" alt="Mate imperial premium cincelado">
+                        <div class="contenido-producto">
+                            <h5>IMPERIAL PREMIUM CINCELADO</h5>
+                            <h5 class="precio-carrito">$2999</h5>
+                            <h6>Cantidad: 4</h6>
+                        </div>
+                        <span><i class="fa-solid fa-trash"></i></span>
+                    </div>
+                    
+                    <div class="producto-carrito">
+                        <img src="images/producto5.png" alt="Mate térmico de acero inoxidable">
+                        <div class="contenido-producto">
+                            <h5>TERMICO DE ACERO INOXIDABLE</h5>
+                            <h5 class="precio-carrito">$3000</h5>
+                            <h6>Cantidad: 2</h6>
+                        </div>
+                        <span><i class="fa-solid fa-trash"></i></span>
+                    </div> -->
+                </div>
+                <h2>Total: $ <strong class="precio-total">0</strong> </h2>
+            </div>
+        </div>
+    </header>
+
+    <section class="contenedor">
+        <div class="contenedor-productos">
+            <div class="producto">
+                <div>
+                    <img src="images/producto1.png" alt="Mate camionero nacional de aluminio">
+                    <p><span>5% Off</span></p>
+                </div>
+                <p class="titulo-producto">CAMIONERO DE ALUMINIO</p>
+                <p class="precio-del-producto">$ <span class="precio-producto">2999</span> </p>
+                <a href="" class="boton-añadir-carrito" data-id="1">Agregar al carrito</a>
+            </div>
+
+            <div class="producto">
+                <div>
+                    <img src="images/producto2.png" alt="Mate imperial premium cincelado">
+                    <p><span>15% Off</span></p>
+                </div>
+                <p class="titulo-producto">IMPERIAL PREMIUM CINCELADO</p>
+                <p class="precio-del-producto">$ <span class="precio-producto">10500</span> </p>
+                <a href="" class="boton-añadir-carrito" data-id="2">Agregar al carrito</a>
+            </div>
+
+            <div class="producto">
+                <div>
+                    <img src="images/producto3.png" alt="Mate torpedo premium de acero">
+                    <p><span>2% Off</span></p>
+                </div>
+                <p class="titulo-producto">IMPERIAL PREMIUM CINCELADO</p>
+                <p class="precio-del-producto">$ <span class="precio-producto">4999</span> </p>
+                <a href="" class="boton-añadir-carrito" data-id="3">Agregar al carrito</a>
+            </div>
+
+            <div class="producto">
+                <div>
+                    <img src="images/producto4.png" alt="Mate camionero premium alpaca">
+                    <p><span>SIN STOCK</span></p>
+                </div>
+                <p class="titulo-producto">CAMIONERO PREMIUM ALPACA</p>
+                <p class="precio-del-producto">$ <span class="precio-producto">7000</span> </p>
+                <a href="" class="boton-añadir-carrito" data-id="4">Agregar al carrito</a>
+            </div>
+
+            <div class="producto">
+                <div>
+                    <img src="images/producto5.png" alt="Mate térmico de acero inoxidable">
+                    <p><span>5% OFF</span></p>
+                </div>
+                <p class="titulo-producto">TÉRMICO DE ACERO INOXIDABLE</p>
+                <p class="precio-del-producto">$ <span class="precio-producto">3000</span> </p>
+                <a href="" class="boton-añadir-carrito" data-id="5">Agregar al carrito</a>
+            </div>
+
+            <div class="producto">
+                <div>
+                    <img src="images/producto6.png" alt="Mate torpedo nacional de aluminio cincelado">
+                    <p><span>7% OFF</span></p>
+                </div>
+                <p class="titulo-producto">TORPEDO NACIONAL DE ALUMINIO CINCELADO</p>
+                <p class="precio-del-producto">$ <span class="precio-producto">3500</span> </p>
+                <a href="" class="boton-añadir-carrito" data-id="6">Agregar al carrito</a>
+            </div>
+
+            <div class="producto">
+                <div>
+                    <img src="images/producto7.png" alt="Mate torpedo premium alpaca cincelado">
+                    <p><span>50% OFF</span></p>
+                </div>
+                <p class="titulo-producto">TORPEDO PREMIUM ALPACA CINCELADA</p>
+                <p class="precio-del-producto">$ <span class="precio-producto">6900</span> </p>
+                <a href="" class="boton-añadir-carrito" data-id="7">Agregar al carrito</a>
+            </div>
+
+            <div class="producto">
+                <div>
+                    <img src="images/producto8.png" alt="Mate imperial de bronce">
+                    <p><span>25% OFF</span></p>
+                </div>
+                <p class="titulo-producto">IMPERIAL DE BRONCE</p>
+                <p class="precio-del-producto">$ <span class="precio-producto">8200</span> </p>
+                <a href="" class="boton-añadir-carrito" data-id="8">Agregar al carrito</a>
+            </div>
+
+            <div class="producto">
+                <div>
+                    <img src="images/producto9.png" alt="Mate torpedo nacional liso">
+                    <p><span>SIN STOCK</span></p>
+                </div>
+                <p class="titulo-producto">TORPEDO NACIONAL LISO</p>
+                <p class="precio-del-producto">$ <span class="precio-producto">2600</span> </p>
+                <a href="" class="boton-añadir-carrito" data-id="9">Agregar al carrito</a>
+            </div>
+
+            <div class="producto">
+                <div>
+                    <img src="images/producto10.png" alt="Mate torpedo nacional liso">
+                    <p><span>2%</span></p>
+                </div>
+                <p class="titulo-producto">CAMIONERO NACIONAL DE ALUMINIO LABRADO</p>
+                <p class="precio-del-producto">$ <span class="precio-producto">3650</span> </p>
+                <a href="" class="boton-añadir-carrito" data-id="10">Agregar al carrito</a>
+            </div>
+
+            <div class="producto">
+                <div>
+                    <img src="images/producto11.png" alt="Mate campestre">
+                    <p><span>SIN STOCK</span></p>
+                </div>
+                <p class="titulo-producto">MATE CAMPESTRE</p>
+                <p class="precio-del-producto">$ <span class="precio-producto">1950</span> </p>
+                <a href="" class="boton-añadir-carrito" data-id="11">Agregar al carrito</a>
+            </div>
+
+            <div class="producto">
+                <div>
+                    <img src="images/producto11.png" alt="Mate campestre">
+                    <p><span>SIN STOCK</span></p>
+                </div>
+                <p class="titulo-producto">MATE CAMPESTRE</p>
+                <p class="precio-del-producto">$ <span class="precio-producto">1950</span> </p>
+                <a href="" class="boton-añadir-carrito" data-id="11">Agregar al carrito</a>
+            </div>
+
+            <div class="producto">
+                <div>
+                    <img src="images/producto12.png" alt="Mate torpedo nacional trenzado">
+                    <p><span>10% OFF</span></p>
+                </div>
+                <p class="titulo-producto">TORPEDO NACIONAL TRENZADO</p>
+                <p class="precio-del-producto">$ <span class="precio-producto">5250</span> </p>
+                <a href="" class="boton-añadir-carrito" data-id="12">Agregar al carrito</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="copy">Copyright © 2024 Proyecto desarrollado por Israel Montiel</p>
+    </footer>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
